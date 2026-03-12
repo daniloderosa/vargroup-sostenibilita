@@ -5,27 +5,41 @@
   "categorie": [
     {
       "tipo": "Benessere sociale e salute",
-      "esempi": ["ASEOP", "Istituto Oncologico Marchigiano", "AIL", "Croce Rossa Italiana", "Vidas – Casa Sollievo Bimbi"],
+      "esempi": [
+        "ASEOP",
+        "Istituto Oncologico Marchigiano",
+        "AIL",
+        "Croce Rossa Italiana"
+      ],
       "n": 8
     },
     {
       "tipo": "Inclusione e formazione digitale",
-      "esempi": ["T-Station Academy", "Fondazione ASPHI Onlus", "Olimpiadi di Informatica", "Hackathon Var Group 2024"],
+      "esempi": [
+        "T-Station Academy",
+        "Fondazione ASPHI Onlus",
+        "Olimpiadi di Informatica",
+        "Hackathon Var Group 2024"
+      ],
       "n": 7
     },
     {
       "tipo": "Educazione e giovani",
-      "esempi": ["Aid4Mada", "Aleimar", "Associazione Alessia", "TEDx Ancona", "Campo estivo Protezione Civile"],
+      "esempi": ["Aid4Mada", "Aleimar", "Associazione Alessia", "TEDx Ancona"],
       "n": 8
     },
     {
       "tipo": "Ambiente e territorio",
-      "esempi": ["WOWnature (albero per ogni nuovo collega)", "Treedom", "Piantumazione in Romania"],
+      "esempi": ["WOWnature", "Treedom", "Piantumazione in Romania"],
       "n": 4
     },
     {
       "tipo": "Sport e cultura",
-      "esempi": ["Lube Volley (Exclusive Innovation Partner)", "Var Digital Art", "SOLMI – Ship of Fools a Venezia"],
+      "esempi": [
+        "Lube Volley (Exclusive Innovation Partner)",
+        "Var Digital Art",
+        "SOLMI – Ship of Fools a Venezia"
+      ],
       "n": 3
     }
   ],

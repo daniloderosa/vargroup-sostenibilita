@@ -1,4 +1,5 @@
 # Bozza Contenuti — Var Group · Bilancio di Sostenibilità 2025
+
 > File temporaneo per validazione narrativa. Non incorporare nel codice finché non approvato.
 > Segue l'ordine dei capitoli del PDF. I dati marcati con ⚠️ non sono stati estratti nei JSON e vanno verificati/integrati dal PDF.
 
@@ -7,9 +8,10 @@
 ## Capitolo 1 — Innovazione Digitale
 
 ### Testo introduttivo
+
 Nata oltre cinquant'anni fa a Empoli, Var Group è oggi una delle realtà più importanti nel panorama tecnologico italiano e internazionale: 875,7 milioni di euro di fatturato consolidato, 4.243 persone, 34 sedi in 15 paesi. Come Digital Integrator, accompagna le aziende in ogni fase dell'evoluzione digitale — dal cloud alla cybersecurity, dalle applicazioni di business all'intelligenza artificiale — con un'offerta che spazia su dieci aree di servizio. Nel 2024 è nata SustainIT, la Business Unit che porta l'expertise di Var Group al servizio della governance ESG delle imprese: un segnale che l'innovazione digitale e la sostenibilità non sono più percorsi separati.
 
-*Tutti i dati presenti nel testo sono estratti dal PDF (pp. 12–27).*
+_Tutti i dati presenti nel testo sono estratti dal PDF (pp. 12–27)._
 
 ### Grafici proposti
 
@@ -19,15 +21,15 @@ Dot map globale con un punto per ogni sede: 18 in Italia (città nominate nel PD
 **Grafico 2 — Il portafoglio di servizi: 10 aree**
 Griglia di 10 tile (rettangoli o esagoni) ognuno con il nome di un'area di servizio: Multimedia & Workspaces, Business Applications, Industry Solutions, Cyber Security, Digital As a Service, Digital Evolution, Industrial Digital Twin, Sustainability Solutions, Data Science, Digital Experience. Nello step 0 tutti i tile appaiono con colore neutro/blu. Nello step 1, SustainIT si accende in verde (--color-accent-green) come caso studio: la BU lanciata a maggio 2024 che incrocia IT e sostenibilità. Nessun dato numerico richiesto — è una tassonomia visiva che mostra la completezza dell'offerta.
 
-
 ---
 
 ## Capitolo 2 — Etica e Governance
 
 ### Testo introduttivo
+
 Nel 2025 Var Group ha avviato una trasformazione organizzativa profonda: il modello gerarchico tradizionale ha lasciato posto a una struttura piatta di "cerchi" autonomi — la Leadership Diffusa — dove ogni persona decide nel proprio dominio seguendo obiettivi condivisi (OKR). Un percorso riconosciuto a settembre 2024 con il premio internazionale ZeroDX Award nella categoria Trasformazione, assegnato dalla Business Ecosystem Alliance a Gary Hamel. A questo si affianca un sistema di governance formale solido: il Consiglio di Amministrazione con nove componenti, il Comitato Operativo di Sostenibilità con quindici referenti interni, e un sistema di certificazioni per la sicurezza informatica che nel 2025 ha fatto un salto in avanti significativo.
 
-*Tutti i dati presenti nel testo sono estratti dal PDF (pp. 34–60).*
+_Tutti i dati presenti nel testo sono estratti dal PDF (pp. 34–60)._
 
 ### Grafico proposto
 
@@ -47,6 +49,7 @@ Dati già disponibili nei JSON (`governance.json` per CdA e certificazioni; dati
 ## Capitolo 3 — Ambiente
 
 ### Testo introduttivo
+
 Var Group affronta il tema ambientale con trasparenza e determinazione: l'energia elettrica consumata è per il 94% da fonti rinnovabili, grazie agli impianti fotovoltaici del Gruppo Sesa e alle forniture certificate. Il quadro complessivo dei consumi energetici — 19.869 MWh nel 2025 — è dominato dalla flotta di oltre 850 veicoli che ogni giorno porta i tecnici Var Group dai clienti su tutto il territorio nazionale: un modello di servizio capillare che l'azienda sta progressivamente evolvendo. La strada verso la neutralità carbonica è già tracciata: nel 2024 Var Group ha organizzato la prima Convention della sua storia con calcolo e compensazione dell'impronta carbonica per ogni partecipante.
 
 ### Grafici proposti
@@ -65,6 +68,7 @@ Grafico ad anello delle emissioni, diviso in tre voci: flotta auto (60,6%, aranc
 ## Capitolo 4 — Le Persone
 
 ### Testo introduttivo
+
 Al 30 aprile 2025, Var Group conta 4.243 persone: 391 in più rispetto all'anno precedente, una crescita del 10,4% che racconta un'azienda in espansione continua. La distribuzione è ancora fortemente concentrata al Nord (58%), ma il 12% lavora già fuori dai confini italiani — in Europa, nelle Americhe, in Asia. Il 29% del personale è donna, una quota che l'azienda ha iniziato ad affrontare con un piano dedicato e una Community DEI attiva dal 2023. La formazione è cresciuta in modo significativo: 73.183 ore erogate nel 2025, +15.950 ore rispetto all'anno prima, con una media di 17,5 ore per persona.
 
 ### Grafici proposti
@@ -73,7 +77,7 @@ Al 30 aprile 2025, Var Group conta 4.243 persone: 391 in più rispetto all'anno 
 100 cerchi piccoli che rappresentano in modo proporzionale i 4.243 dipendenti (ogni dot ≈ 42 persone). Nello step 0: disposizione casuale, con il contatore "4.243" in evidenza. Nello step 1: i dot si raggruppano in 4 colonne per area (Nord, Centro, Estero, Sud), colorati diversamente. Nello step 2: i pallini si ridistribuiscono completamente in nuove posizioni raggruppate per fascia d'età (≤30, 31–50, >50) — non solo un cambio di colore, ma una nuova disposizione visiva che racconta la struttura generazionale. I nuovi ingressi under 30 appaiono più grandi o pulsanti.
 
 **Grafico 2 — Waffle chart composizione di genere + stacked bar per livello**
-Step 0: waffle 10×10 (100 celle) con 71 blu (uomini) e 29 arancio (donne). Step 1: 4 barre orizzontali impilate per livello gerarchico (Dirigenti, Quadri, Impiegati, Operai), con la percentuale di donne evidenziata. Step 2: due rettangoli proporzionali affiancati che mostrano il gender pay gap (100% vs 88%, con la differenza –12% annotata).
+Step 0: waffle 10×10 (100 celle) con 71 blu (uomini) e 29 arancio (donne). Step 1: 4 barre orizzontali impilate per livello gerarchico (Dirigenti, Quadri, Impiegati, Operai), con la percentuale di donne evidenziata.
 
 **Grafico 3 — Barchart orizzontale tipologie di formazione**
 4 barre orizzontali che mostrano la distribuzione percentuale delle ore di formazione per tipo: Tecnica (39%), Base/trasversale (34%), Sicurezza e compliance (21%), DEI (6%). Le barre entrano da sinistra con animazione progressiva. In alto: "73.183 ore totali · 17,5 ore/persona in media".
@@ -83,6 +87,7 @@ Step 0: waffle 10×10 (100 celle) con 71 blu (uomini) e 29 arancio (donne). Step
 ## Capitolo 5 — Supporto alle Comunità
 
 ### Testo introduttivo
+
 Il bilancio di sostenibilità di Var Group non si chiude dentro l'azienda: nel 2025, oltre 450.000 euro sono stati destinati a più di 30 iniziative in Italia, Spagna e Svizzera. Le aree di intervento spaziano dalla salute (oncologia pediatrica, cure palliative) alla formazione digitale inclusiva, dall'educazione giovanile alla tutela ambientale, fino allo sport e alla cultura. Non è una lista di donazioni: è un sistema di partnership e sponsorizzazioni che in alcuni casi, come l'Hackathon Var Group o la collaborazione con Fondazione ASPHI, tocca direttamente il cuore del business tecnologico. Per ogni nuova persona che entra in Var Group, viene piantato un albero in Val di Fiemme.
 
 ### Grafici proposti

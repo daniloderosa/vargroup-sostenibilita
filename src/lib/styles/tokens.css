@@ -1,30 +1,40 @@
 :root {
-  /* ── Colori estratti da vargroup.com (marzo 2026) ── */
+  /* ── Tema chiaro — sfondo bianco, testi scuri ── */
 
-  /* Sfondo e superfici — estetica dark del sito ufficiale */
-  --color-bg:           #0d0d10;
-  --color-surface:      #141418;
-  --color-surface-2:    #1c1c22;
-  --color-border:       #2a2a35;
+  /* Sfondo e superfici */
+  --color-bg:           #ffffff;
+  --color-surface:      #f5f5f2;
+  --color-surface-2:    #ebebе7;
+  --color-border:       #d4d4cc;
 
   /* Testo */
-  --color-text:         #ffffff;
-  --color-text-muted:   #767676;
-  --color-text-faint:   #505050;
+  --color-text:         #1a1a1a;
+  --color-text-muted:   #555555;
+  --color-text-faint:   #888888;
   --color-text-dark:    #141414;
 
-  /* Blu brand Var Group — colore dominante del sito */
+  /* Blu brand (usato solo per elementi UI strutturali, non grafici) */
   --color-brand-blue:       #1032cf;
   --color-brand-blue-mid:   #2a4eef;
   --color-brand-blue-light: #1268fb;
 
-  /* Accenti per dati ESG */
-  --color-accent-green:  #00A651;   /* ambiente, sostenibilità */
-  --color-accent-orange: #F5A623;   /* DEI, genere, comunità */
-  --color-accent-red:    #e05c5c;   /* warning, gap negativi */
+  /* ── Palette verde dal PDF (estratta marzo 2026) ── */
+  --color-green-deep:     #175C4A;   /* verde teal scuro */
+  --color-green-forest:   #33804C;   /* verde foresta — principale */
+  --color-green-mid:      #78B557;   /* verde medio */
+  --color-green-lime:     #61BD57;   /* verde lime */
+  --color-green-yellow:   #C9E35C;   /* giallo-verde */
+  --color-green-electric: #87FF45;   /* verde elettrico */
+  --color-green-mint:     #C0E4BC;   /* menta chiaro */
+  --color-green-sage:     #C4D6BA;   /* sage */
+
+  /* Alias legacy (ora puntano al verde) */
+  --color-accent-green:   #33804C;
+  --color-accent-orange:  #F5A623;   /* tenuto per comparazione pay gap */
+  --color-accent-red:     #e05c5c;
 
   /* Superficie chiara */
-  --color-surface-light: #f4f4f4;
+  --color-surface-light:  #f8f8f4;
 
   /* ── Font — estratti da vargroup.com (marzo 2026) ── */
   --font-display: 'Manrope', system-ui, sans-serif;

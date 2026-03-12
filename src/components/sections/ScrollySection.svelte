@@ -2,12 +2,11 @@
   import { onMount } from 'svelte';
   import Scrolly from '$components/helpers/Scrolly.svelte';
 
-  let { sectionNumber, sectionTitle, steps = [], chart } = $props();
+  let { sectionNumber = '', sectionTitle, intro = '', steps = [], chart } = $props();
 
   let activeStep = $state(0);
   let isMobile = $state(false);
 
-  // onMount è eccezione consentita per rilevamento viewport (CLAUDE.md)
   onMount(() => {
     isMobile = window.innerWidth <= 768;
     const handler = () => { isMobile = window.innerWidth <= 768; };
@@ -15,37 +14,75 @@
     return () => window.removeEventListener('resize', handler);
   });
 
-  // Su mobile, mostra sempre l'ultimo step del grafico
+  // Su desktop: step reattivo dallo scrolly. Su mobile: mostrato per singolo step
   let displayStep = $derived(isMobile ? steps.length - 1 : activeStep);
 </script>
 
-<section class="section-scrolly">
-  <header class="section-header">
-    <span class="section-number">{sectionNumber}</span>
-    <h2>{sectionTitle}</h2>
-  </header>
+{#if isMobile}
+  <!-- ── MOBILE LAYOUT: titolo → intro → (testo + grafico) per ogni step ── -->
+  <section class="section-scrolly section-mobile">
+    <header class="section-header">
+      {#if sectionNumber}<span class="section-number">{sectionNumber}</span>{/if}
+      <h2>{sectionTitle}</h2>
+    </header>
 
-  <div class="sticky-chart">
-    {@render chart(displayStep)}
-  </div>
+    {#if intro}
+      <div class="section-intro">
+        <p>{@html intro}</p>
+      </div>
+    {/if}
 
-  <div class="steps-column">
-    <Scrolly bind:value={activeStep}>
+    <div class="mobile-steps">
       {#each steps as step, i}
-        <div class="step">
-          <div class="step-card" class:active={activeStep === i || isMobile}>
+        <div class="mobile-step">
+          <div class="step-card active">
             <p>{@html step.text}</p>
-            {#if step.subtext}
-              <p class="subtext">{@html step.subtext}</p>
-            {/if}
+            {#if step.subtext}<p class="subtext">{@html step.subtext}</p>{/if}
+          </div>
+          <div class="mobile-chart">
+            {@render chart(i)}
           </div>
         </div>
       {/each}
-    </Scrolly>
-  </div>
-</section>
+    </div>
+  </section>
+{:else}
+  <!-- ── DESKTOP LAYOUT: header → intro → [chart sticky | steps] ── -->
+  <section class="section-scrolly">
+    <header class="section-header">
+      {#if sectionNumber}<span class="section-number">{sectionNumber}</span>{/if}
+      <h2>{sectionTitle}</h2>
+    </header>
+
+    {#if intro}
+      <div class="section-intro">
+        <p>{@html intro}</p>
+      </div>
+    {/if}
+
+    <div class="sticky-chart">
+      {@render chart(displayStep)}
+    </div>
+
+    <div class="steps-column">
+      <Scrolly bind:value={activeStep}>
+        {#each steps as step, i}
+          <div class="step">
+            <div class="step-card" class:active={activeStep === i}>
+              <p>{@html step.text}</p>
+              {#if step.subtext}
+                <p class="subtext">{@html step.subtext}</p>
+              {/if}
+            </div>
+          </div>
+        {/each}
+      </Scrolly>
+    </div>
+  </section>
+{/if}
 
 <style>
+  /* ── Desktop ─────────────────────────────────────────────────────── */
   .section-scrolly {
     position: relative;
     display: grid;
@@ -56,7 +93,7 @@
 
   .section-header {
     grid-column: 1 / -1;
-    padding: 5rem 4rem 2.5rem;
+    padding: 5rem 4rem 2rem;
   }
 
   .section-number {
@@ -64,7 +101,7 @@
     font-size: 0.7rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--color-brand-blue-light);
+    color: var(--color-green-forest);
     display: block;
     margin-bottom: 0.75rem;
   }
@@ -76,6 +113,26 @@
     max-width: 700px;
   }
 
+  /* ── Testo introduttivo centrato — piena larghezza ────────────────── */
+  .section-intro {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    padding: 0 4rem 3.5rem;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 0;
+  }
+
+  .section-intro p {
+    max-width: 760px;
+    width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+  }
+
+  /* ── Grafico sticky ───────────────────────────────────────────────── */
   .sticky-chart {
     position: sticky;
     top: 0;
@@ -86,6 +143,7 @@
     will-change: transform;
   }
 
+  /* ── Colonna testi ────────────────────────────────────────────────── */
   .steps-column {
     padding: 8vh 2rem 50vh;
     display: flex;
@@ -111,7 +169,7 @@
 
   .step-card.active {
     opacity: 1;
-    border-color: var(--color-brand-blue);
+    border-color: var(--color-green-forest);
   }
 
   .step-card p {
@@ -122,43 +180,54 @@
 
   .step-card :global(strong) {
     font-weight: 600;
-    color: var(--color-text);
+    color: var(--color-green-deep);
   }
 
   .subtext {
     margin-top: 0.85rem;
-    color: var(--color-text-muted) !important;
+    color: var(--color-text-faint) !important;
     font-size: 0.8rem !important;
     line-height: 1.6 !important;
   }
 
-  @media (max-width: 768px) {
-    .section-scrolly { display: block; }
+  /* ── Mobile ──────────────────────────────────────────────────────── */
+  .section-mobile {
+    display: block;
+    border-top: 1px solid var(--color-border);
+  }
 
-    .section-header { padding: 3rem 1.25rem 1.5rem; }
+  .section-mobile .section-header {
+    padding: 3rem 1.25rem 1.5rem;
+  }
 
-    .sticky-chart {
-      position: relative;
-      top: auto;
-      height: 60vw;
-      min-height: 260px;
-      max-height: 380px;
-      width: 100%;
-    }
+  .section-mobile .section-intro {
+    padding: 0 1.25rem 2rem;
+    border-bottom: 1px solid var(--color-border);
+  }
 
-    .steps-column { padding: 1.5rem 1.25rem 3rem; }
+  .mobile-steps {
+    padding: 0 1.25rem 3rem;
+  }
 
-    .step {
-      min-height: auto;
-      padding: 1.25rem 0;
-      border-bottom: 1px solid var(--color-border);
-    }
+  .mobile-step {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
 
-    .step:last-child { border-bottom: none; }
+  .mobile-step:last-child {
+    border-bottom: none;
+  }
 
-    .step-card {
-      opacity: 1;
-      border-color: var(--color-border);
-    }
+  .mobile-step .step-card {
+    opacity: 1;
+    border-color: var(--color-border);
+    margin-bottom: 1rem;
+  }
+
+  .mobile-chart {
+    width: 100%;
+    height: 64vw;
+    min-height: 240px;
+    max-height: 360px;
   }
 </style>
