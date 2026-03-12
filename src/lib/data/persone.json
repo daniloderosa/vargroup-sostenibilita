@@ -1,0 +1,42 @@
+{
+  "totale_2025": 4243,
+  "totale_2024": 3852,
+  "variazione_pct": 10.4,
+  "nuove_assunzioni_2025": 596,
+  "geografia": [
+    { "area": "Nord Italia", "n": 2456, "pct": 57.9 },
+    { "area": "Centro Italia", "n": 1133, "pct": 26.7 },
+    { "area": "Estero", "n": 509, "pct": 12.0 },
+    { "area": "Sud Italia", "n": 127, "pct": 3.0 }
+  ],
+  "eta": [
+    { "fascia": "≤30", "n_2024": 916, "n_2025": 939 },
+    { "fascia": "31–50", "n_2024": 1871, "n_2025": 2043 },
+    { "fascia": ">50", "n_2024": 1033, "n_2025": 1210 }
+  ],
+  "assunzioni_per_eta_pct": [
+    { "fascia": "<30", "pct": 46 },
+    { "fascia": "30–50", "pct": 42 },
+    { "fascia": ">50", "pct": 12 }
+  ],
+  "formazione": {
+    "ore_totali_2025": 73183,
+    "ore_totali_2024": 63233,
+    "media_ore_per_persona_2025": 17.5,
+    "media_ore_per_persona_2024": 12.7,
+    "media_uomini_2025": 19.1,
+    "media_donne_2025": 13.5,
+    "tipologie": [
+      { "tipo": "Formazione tecnica", "pct": 39 },
+      { "tipo": "Base/trasversale", "pct": 34 },
+      { "tipo": "Sicurezza e compliance", "pct": 21 },
+      { "tipo": "Diversità, Equità, Inclusione", "pct": 6 }
+    ]
+  },
+  "turnover": {
+    "uscita_pct_2025": 8.02,
+    "uscita_pct_2024": 8.28,
+    "entrata_pct_2025": 14.22,
+    "entrata_pct_2024": 20.15
+  }
+}

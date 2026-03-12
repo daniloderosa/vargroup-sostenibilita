@@ -1,0 +1,44 @@
+:root {
+  /* ── Colori estratti da vargroup.com (marzo 2026) ── */
+
+  /* Sfondo e superfici — estetica dark del sito ufficiale */
+  --color-bg:           #0d0d10;
+  --color-surface:      #141418;
+  --color-surface-2:    #1c1c22;
+  --color-border:       #2a2a35;
+
+  /* Testo */
+  --color-text:         #ffffff;
+  --color-text-muted:   #767676;
+  --color-text-faint:   #505050;
+  --color-text-dark:    #141414;
+
+  /* Blu brand Var Group — colore dominante del sito */
+  --color-brand-blue:       #1032cf;
+  --color-brand-blue-mid:   #2a4eef;
+  --color-brand-blue-light: #1268fb;
+
+  /* Accenti per dati ESG */
+  --color-accent-green:  #00A651;   /* ambiente, sostenibilità */
+  --color-accent-orange: #F5A623;   /* DEI, genere, comunità */
+  --color-accent-red:    #e05c5c;   /* warning, gap negativi */
+
+  /* Superficie chiara */
+  --color-surface-light: #f4f4f4;
+
+  /* ── Font — estratti da vargroup.com (marzo 2026) ── */
+  --font-display: 'Manrope', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'IBM Plex Mono', monospace;
+
+  /* ── Layout scrollytelling full-width ── */
+  --step-width:    340px;
+  --step-height:   80vh;
+  --sticky-top:    0px;
+  --section-gap:   0px;
+
+  /* ── Z-index ── */
+  --z-sticky:  10;
+  --z-overlay: 20;
+  --z-tooltip: 30;
+}

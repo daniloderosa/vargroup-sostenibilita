@@ -1,0 +1,28 @@
+{
+	"name": "var-bilancio",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^7.0.0",
+		"@sveltejs/adapter-static": "^3.0.10",
+		"@sveltejs/kit": "^2.50.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"autoprefixer": "^10.4.27",
+		"postcss": "^8.5.8",
+		"svelte": "^5.51.0",
+		"svelte-preprocess": "^6.0.3",
+		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"d3": "^7.9.0",
+		"layerchart": "^1.0.13",
+		"svelteplot": "^0.11.1"
+	}
+}

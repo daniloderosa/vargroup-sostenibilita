@@ -1,0 +1,16 @@
+{
+  "composizione": { "uomini_pct": 71, "donne_pct": 29 },
+  "per_inquadramento": [
+    { "livello": "Dirigenti", "uomini": 31, "donne": 4, "totale": 35 },
+    { "livello": "Quadri", "uomini": 355, "donne": 81, "totale": 436 },
+    { "livello": "Impiegati", "uomini": 2569, "donne": 1136, "totale": 3705 },
+    { "livello": "Operai", "uomini": 12, "donne": 4, "totale": 16 }
+  ],
+  "gender_pay_gap": {
+    "italia_pct": 12,
+    "estero_pct": 14,
+    "nota": "Differenza percentuale tra retribuzione media femminile e maschile, espressa come % del livello maschile"
+  },
+  "community_dei_anno_fondazione": 2023,
+  "formazione_dei_ore_pct": 6
+}

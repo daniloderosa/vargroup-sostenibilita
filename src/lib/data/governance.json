@@ -1,0 +1,43 @@
+{
+  "cda": [
+    { "nome": "Giovanni Moriani", "ruolo": "Presidente", "genere": "M", "eta": 68, "anzianita": 27, "esecutivo": false },
+    { "nome": "Francesca Moriani", "ruolo": "Amministratrice Delegata", "genere": "F", "eta": 48, "anzianita": 11, "esecutivo": true },
+    { "nome": "Alessandro Gencarelli", "ruolo": "Consigliere", "genere": "M", "eta": 54, "anzianita": 5, "esecutivo": true },
+    { "nome": "Enrico Corradini", "ruolo": "Consigliere", "genere": "M", "eta": 43, "anzianita": 11, "esecutivo": true },
+    { "nome": "Fabio Falaschi", "ruolo": "Consigliere", "genere": "M", "eta": 62, "anzianita": 27, "esecutivo": true },
+    { "nome": "Fabio Luraghi", "ruolo": "Consigliere", "genere": "M", "eta": 59, "anzianita": 11, "esecutivo": false },
+    { "nome": "Fabio Stanga", "ruolo": "Consigliere", "genere": "M", "eta": 63, "anzianita": 14, "esecutivo": true },
+    { "nome": "Mirko Gatto", "ruolo": "Consigliere", "genere": "M", "eta": 49, "anzianita": 11, "esecutivo": true },
+    { "nome": "Eugenio Capasso", "ruolo": "Consigliere", "genere": "M", "eta": 61, "anzianita": 1, "esecutivo": true }
+  ],
+  "collegio_sindacale": [
+    { "nome": "Fabrizio Rossi", "ruolo": "Presidente", "genere": "M", "eta": 67 },
+    { "nome": "Fabrizio Berti", "ruolo": "Sindaco", "genere": "M", "eta": 53 },
+    { "nome": "Lucia Perfetti", "ruolo": "Sindaco", "genere": "F", "eta": 39 },
+    { "nome": "Massimo Innocenti", "ruolo": "Sindaco supplente", "genere": "M", "eta": 63 },
+    { "nome": "Marco Ferri", "ruolo": "Sindaco supplente", "genere": "M", "eta": 56 }
+  ],
+  "cos": [
+    { "nome": "Alessandro Di Stefano", "genere": "M", "eta": 33 },
+    { "nome": "Alessandro Gencarelli", "genere": "M", "eta": 54 },
+    { "nome": "Antonella Collalto", "genere": "F", "eta": 58 },
+    { "nome": "Cecilia Felici", "genere": "F", "eta": 46 },
+    { "nome": "Elisabetta Corsico", "genere": "F", "eta": 39 },
+    { "nome": "Enrico Corradini", "genere": "M", "eta": 43 },
+    { "nome": "Eugenio Capasso", "genere": "M", "eta": 62 },
+    { "nome": "Fabio Stanga", "genere": "M", "eta": 63 },
+    { "nome": "Francesca Belgrano", "genere": "F", "eta": 52 },
+    { "nome": "Francesca Moriani", "genere": "F", "eta": 48 },
+    { "nome": "Francesca Tomassetti", "genere": "F", "eta": 55 },
+    { "nome": "Laura Colombo", "genere": "F", "eta": 49 },
+    { "nome": "Luciano Antonio Cavalera", "genere": "M", "eta": 43 },
+    { "nome": "Maurizio Fraccari", "genere": "M", "eta": 63 },
+    { "nome": "Nadia Cozzi", "genere": "F", "eta": 57 },
+    { "nome": "Sara Lazzeretti", "genere": "F", "eta": 53 },
+    { "nome": "Silvia Esposito", "genere": "F", "eta": 48 },
+    { "nome": "Simona Pelli", "genere": "F", "eta": 58 },
+    { "nome": "Vanessa Sabato", "genere": "F", "eta": 35 }
+  ],
+  "societa_controllate": 82,
+  "casi_corruzione": 0
+}

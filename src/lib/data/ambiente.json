@@ -1,0 +1,26 @@
+{
+  "energia": {
+    "totale_mwh": 19869.3,
+    "fossili_mwh": 13826.8,
+    "fossili_pct": 69.6,
+    "rinnovabili_pct": 30.4,
+    "elettricita_rinnovabili_pct": 94,
+    "fonti_fossili_dettaglio": [
+      { "fonte": "Carburanti flotta auto (gasolio, benzina, GPL)", "mwh": 12306.2, "pct_totale": 62 },
+      { "fonte": "Gas naturale riscaldamento", "mwh": 1124.8, "pct_totale": 5.7 },
+      { "fonte": "Elettricità da fonti fossili", "mwh": 395.8, "pct_totale": 2 }
+    ]
+  },
+  "emissioni_scope1_2": {
+    "flotta_auto_pct": 60.6,
+    "elettricita_sedi_pct": 35.4,
+    "gas_naturale_pct": 4.0
+  },
+  "flotta_auto_n": 850,
+  "convention_2024": {
+    "evento": "Convention Var Group 2024",
+    "carbon_neutral": true,
+    "nota": "Prima convention con calcolo e compensazione dell'impronta carbonica per partecipante"
+  },
+  "piano_transizione": false
+}

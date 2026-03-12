@@ -1,0 +1,16 @@
+{
+  "aree": [
+    { "nome": "Multimedia & Workspaces", "sustainit": false },
+    { "nome": "Business Applications", "sustainit": false },
+    { "nome": "Industry Solutions", "sustainit": false },
+    { "nome": "Cyber Security", "sustainit": false },
+    { "nome": "Digital As a Service", "sustainit": false },
+    { "nome": "Digital Evolution", "sustainit": false },
+    { "nome": "Industrial Digital Twin", "sustainit": false },
+    { "nome": "Sustainability Solutions", "sustainit": true },
+    { "nome": "Data Science", "sustainit": false },
+    { "nome": "Digital Experience", "sustainit": false }
+  ],
+  "sustainit_lancio": "maggio 2024",
+  "sustainit_nota": "Business Unit che incrocia IT e governance ESG"
+}
