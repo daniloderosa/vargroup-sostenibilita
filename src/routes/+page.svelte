@@ -5,7 +5,8 @@
   import GovernanceChart  from '$components/charts/GovernanceChart.svelte';
   import EnergyChart      from '$components/charts/EnergyChart.svelte';
   import Chapter4Chart    from '$components/charts/Chapter4Chart.svelte';
-  import CommunityChart   from '$components/charts/CommunityChart.svelte';
+  import CommunityChart        from '$components/charts/CommunityChart.svelte';
+  import NotaMetodologica      from '$components/sections/NotaMetodologica.svelte';
 
   // ── SEZIONE 1 — Innovazione Digitale ───────────────────────────────────────
   const innovazioneIntro = `Nata oltre cinquant'anni fa a Empoli, Var Group è oggi una delle realtà più importanti nel panorama tecnologico italiano e internazionale: 875,7 milioni di euro di fatturato consolidato, 4.243 persone, 34 sedi in 15 paesi. Come Digital Integrator, accompagna le aziende in ogni fase dell'evoluzione digitale — dal cloud alla cybersecurity, dalle applicazioni di business all'intelligenza artificiale — con un'offerta che spazia su dieci aree di servizio. Nel 2024 è nata SustainIT, la Business Unit che porta l'expertise di Var Group al servizio della governance ESG delle imprese: un segnale che l'innovazione digitale e la sostenibilità non sono più percorsi separati.`;
@@ -175,4 +176,7 @@ formali.`;
       <CommunityChart activeStep={step} />
     {/snippet}
   </ScrollySection>
+
+  <NotaMetodologica />
+
 </main>
